@@ -38,14 +38,6 @@ $(OBJDIR):
 $(SRCDIR):
 	mkdir $(SRCDIR)
 
-warning:
-	@echo "=========Please make sure you have built your shared library object!========="
-
-$(TESTRUN): $(TESTF) warning
-	@echo "============================================================================="
-	@echo "compiling test file"
-	$(CXX) $(LIBFLAGS) -I $(INCPATH) -L$(LIBPATH) -lSUDOKU $< -o $@
-
 test: $(TARGET)
 	@echo "============Compiling SudokuTest.cpp and linking to libSUDOKU.so to the exec: libtest============"
 	@echo " run ./libtest to run the test program"
