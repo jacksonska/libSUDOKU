@@ -15,7 +15,6 @@ TARGET = libtest
 
 # Testing targets
 TESTF = $(SRCDIR)/SudokuTest.cpp
-TESTRUN = test-run
 
 
 INCPATH = ./ #/home/dev/source_code/Projects/SudokuPrivate/ # Path to dir of files I made

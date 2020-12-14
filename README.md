@@ -14,3 +14,8 @@
     + To link your own files compile your written code, lets call it test.c, with `gcc -Wall -Wextra -g -Wl -rpath,**PATH_TO_LIBRARY_BINARY** test.c -o **TEST_EXECUTABLE** -L**PATH_TO_LIBRARY_BINARY** -lSUDOKU`
       - The bold test above are lines you need to fill in yourself
       - **NOTE:** You can use a relative path to fill out the **PATH_TO_LIBRARY_BINARY** sections if you are coding your test in the same directory as my file "SudokuTest.cpp". However, it is probably best to just use the absolute path for your own clarity.
+
+## Solving Algorithm
+  + This library solves sudoku boards using a recursive backtracing algorithm.
+    - `solveHelper` is the main recursive function of the library, along with the functions `isValid` and `verify`.
+  + Pseudo code describing the algorithm can be found in solver.cpp line 403-417
